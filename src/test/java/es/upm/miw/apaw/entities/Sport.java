@@ -2,6 +2,8 @@ package es.upm.miw.apaw.entities;
 
 public class Sport {
 	private long id;
+    private String title;
+	private String category;
 	public long getId() {
 		return id;
 	}
@@ -20,6 +22,5 @@ public class Sport {
 	public void setCategory(String category) {
 		this.category = category;
 	}
-	private String title;
-	private String category;
+
 }
