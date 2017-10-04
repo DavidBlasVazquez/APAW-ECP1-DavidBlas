@@ -5,7 +5,7 @@ import java.util.Calendar;
 public class User {
 	private long id;
 	private String name;
-	private Calendar birthdate;
+	private Calendar birthDate;
 	private boolean active;
 	public long getId() {
 		return id;
@@ -19,11 +19,11 @@ public class User {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public Calendar getBirthdate() {
-		return birthdate;
+	public Calendar getBirthDate() {
+		return birthDate;
 	}
-	public void setBirthdate(Calendar birthdate) {
-		this.birthdate = birthdate;
+	public void setBirthDate(Calendar birthdate) {
+		this.birthDate = birthdate;
 	}
 	public boolean isActive() {
 		return active;

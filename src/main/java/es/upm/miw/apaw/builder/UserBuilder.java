@@ -6,23 +6,23 @@ import es.upm.miw.apaw.entities.User;
 
 public class UserBuilder {
 	private User user;
-
-	
-	public UserBuilder UserBuilder() {
+	public UserBuilder() {
 		user = new User();
-		return this;
 	}
-	public UserBuilder UserBuilder(long id) {
+	public UserBuilder(long id) {
 		user = new User();
 		user.setId(id);
-		return this;
 	}
 	public UserBuilder name (String name) {
 		user.setName(name);
 		return this;
 	}
-	public UserBuilder birthdate (Calendar birthdate) {
-		user.setBirthdate(birthdate);
+	public UserBuilder id (long id ) {
+		user.setId(id);
+		return this;
+	}
+	public UserBuilder birthDate (Calendar birthdate) {
+		user.setBirthDate(birthdate);
 		return this;
 	}
 	public UserBuilder active (boolean active) {
