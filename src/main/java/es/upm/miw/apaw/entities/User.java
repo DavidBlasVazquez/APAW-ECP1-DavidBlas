@@ -21,10 +21,10 @@ public class User implements IUser {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public Calendar getBirthdate() {
+	public Calendar getBirthDate() {
 		return birthdate;
 	}
-	public void setBirthdate(Calendar birthdate) {
+	public void setBirthDate(Calendar birthdate) {
 		this.birthdate = birthdate;
 	}
 	public boolean isActive() {

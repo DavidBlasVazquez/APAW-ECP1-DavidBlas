@@ -8,8 +8,8 @@ public interface IUser {
 	public void setId(long id);
 	public String getName();
 	public void setName(String name);
-	public Calendar getBirthdate();
-	public void setBirthdate(Calendar birthdate);
+	public Calendar getBirthDate();
+	public void setBirthDate(Calendar birthdate);
 	public boolean isActive();
 	public void setActive(boolean active);
 	public void setSports(List<Sport> sports);
