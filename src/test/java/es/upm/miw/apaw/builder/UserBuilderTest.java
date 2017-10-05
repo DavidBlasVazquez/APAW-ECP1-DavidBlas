@@ -2,12 +2,15 @@ package es.upm.miw.apaw.builder;
 
 import static org.junit.Assert.*;
 
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.List;
 
 import org.junit.Before;
 import org.junit.Test;
 
 import es.upm.miw.apaw.builder.UserBuilder;
+import es.upm.miw.apaw.entities.Sport;
 import es.upm.miw.apaw.entities.User;
 
 public class UserBuilderTest {
@@ -44,5 +47,12 @@ public class UserBuilderTest {
 		user.setActive(true);
 		userBuilder.active(true);
 		assertEquals(user.isActive(), userBuilder.build().isActive());
+	}
+	@Test
+	public void sportsTest() {
+		List<Sport> sports = new ArrayList<Sport>();
+		user.setSports(sports);
+		userBuilder.sports(sports);
+		assertEquals(user.getSports(), userBuilder.build().getSports());
 	}
 }
