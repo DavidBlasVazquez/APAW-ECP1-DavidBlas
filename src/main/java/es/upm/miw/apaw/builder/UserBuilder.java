@@ -4,7 +4,6 @@ import java.util.Calendar;
 import java.util.List;
 
 import es.upm.miw.apaw.entities.User;
-import es.upm.miw.apaw.entities.IUser;
 import es.upm.miw.apaw.entities.Sport;
 
 public class UserBuilder {
@@ -36,7 +35,7 @@ public class UserBuilder {
 		user.setSports(sports);
 		return this;
 	}
-	public IUser build() {
+	public User build() {
 		return user;
 	}
 }
