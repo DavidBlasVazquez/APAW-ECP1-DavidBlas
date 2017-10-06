@@ -3,7 +3,7 @@ package es.upm.miw.apaw.entities;
 import java.util.Calendar;
 import java.util.List;
 
-public class User implements IUser {
+public class User  {
 	private long id;
 	private String name;
 	private Calendar birthDate;

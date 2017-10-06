@@ -1,6 +1,6 @@
 package es.upm.miw.apaw.entities;
 
-public class Sport implements ISport {
+public class Sport {
 	private long id;
     private String title;
 	private String category;
