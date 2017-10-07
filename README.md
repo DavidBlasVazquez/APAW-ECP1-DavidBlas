@@ -1,21 +1,11 @@
-# Forja
-> Este proyecto pretende ser un ejemplo de preparación de una forja para el desarrollo de software colaborativo
+# APAW. ECP1. Patrones de Diseño 
 > ##### [Máster en Ingeniería Web por la Universidad Politécnica de Madrid (miw-upm)](http://miw.etsisi.upm.es)
-> ##### Asignatura: *Ingeniería Web: Visión General*
+> ##### Asignatura: *Arquitectura y Patrones para Aplicaciones Web*
 
-### Estado del código
+### Buscar, comprender , explicar y realizar un ejemplo propio del funcionamiento del patrón strategy.
 
-[![Build Status](https://travis-ci.org/miw-upm/IWVG-forge.svg?branch=develop)](https://travis-ci.org/miw-upm/IWVG-forge)
+* Explicacion
+Este patrón permite que la implementación de un algoritmo sea delegado a las subclases de tal manera que cada subclase aporta una forma diferente de realizar el algoritmo. También se puede aplicar mediante composición, para cambiar en tiempo de ejecución el algoritmo de un objeto.
 
-[![Quality Gate](https://sonarcloud.io/api/badges/gate?key=es.upm.miw:IWVG-forge)](https://sonarcloud.io/dashboard/index/es.upm.miw:IWVG-forge)
-
-[![codebeat badge](https://codebeat.co/badges/72a87b0f-0ada-4895-9fcb-1d10a392bdaf)](https://codebeat.co/projects/github-com-miw-upm-iwvg-forge-develop)
-
-### Tecnologías necesarias
-* Java
-* Maven
-* Eclipse
-* GitHub
-* Travis-ci
-* Sonarcloud
-* Codebeat
+* Ejemplo
+Para hacer un ejemplo, he creado una clases abstracta UserStrategy heredando de User para definir el método abstracto showPersonalData() que busca mostrar el nombre y el cumpleaños del user. Este método es implementado por dos clases concretas UserNameBirthdate y UserBirthdateName; donde cada clase mostrará en un orden diferente el nombre y la edad: UserNameBirthdate muestra primero el nombre y luego la edad y UserBirthdateName primero la edad y luego el nombre.
