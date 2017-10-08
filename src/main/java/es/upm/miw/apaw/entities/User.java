@@ -1,7 +1,6 @@
 package es.upm.miw.apaw.entities;
 
 import java.util.Calendar;
-import java.util.List;
 import java.util.Stack;
 
 public class User  {
@@ -48,6 +47,6 @@ public class User  {
 	}
 	public Sport getSport() {
 		if (sports.size() == 0) return null;
-        return sports.firstElement();
+        return sports.pop();
 	}
 }
