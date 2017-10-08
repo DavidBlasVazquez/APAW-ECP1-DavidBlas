@@ -8,7 +8,7 @@ branches:
 notifications:
   email:
     recipients:
-    - jonathan.lozano.sanchez@gmail.com
+    - david.bv@gmail.com
 script:
 #Test unitario y de integracion en develop
 - mvn clean verify --settings settings.xml
