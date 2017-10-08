@@ -6,8 +6,8 @@ import org.junit.runners.Suite.SuiteClasses;
 
 @RunWith(Suite.class)
 @SuiteClasses({
-	UserBuilderConstructorTest.class,
-    UserBuilderTest.class
+    UserBuilderTest.class,
+    SportBuilderTest.class
 })
 public class AllBuilderTests {
 
