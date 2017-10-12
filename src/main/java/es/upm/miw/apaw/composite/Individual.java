@@ -55,10 +55,12 @@ public class Individual implements Component, UserInterface {
 
 	@Override
 	public void remove(Component component) {
+		// It is individual o leaf, is that it can not remove components.
 	}
 
 	@Override
 	public void add(Component component) {
+		// It is individual o leaf, is that it can not add components.
 	}
 
 	@Override
