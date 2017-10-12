@@ -6,7 +6,7 @@ import es.upm.miw.apaw.entities.Sport;
 import es.upm.miw.apaw.entities.User;
 import es.upm.miw.apaw.entities.UserInterface;
 
-public class Individual extends Component implements UserInterface {
+public class Individual implements Component, UserInterface {
 	private User user;
 	
 	public Individual (User user) {
