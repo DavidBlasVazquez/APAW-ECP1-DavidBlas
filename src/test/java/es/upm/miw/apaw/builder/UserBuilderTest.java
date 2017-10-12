@@ -2,9 +2,7 @@ package es.upm.miw.apaw.builder;
 
 import static org.junit.Assert.*;
 
-import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.List;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -16,16 +14,14 @@ import es.upm.miw.apaw.entities.User;
 public class UserBuilderTest {
 	private User user;
 	private UserBuilder userBuilder;
+	private Long id = new Long(123456);
 	@Before
 	public void before() {
-		user = new User();
-		userBuilder = new UserBuilder();
+		user = new User(id);
+		userBuilder = new UserBuilder(id);
 	}
 	@Test
 	public void idTest() {
-		long id = 123456;
-		user.setId(id);
-		userBuilder.id(id);
 		assertEquals(user.getId(), userBuilder.build().getId());
 	}
 	@Test
@@ -50,9 +46,9 @@ public class UserBuilderTest {
 	}
 	@Test
 	public void sportsTest() {
-		List<Sport> sports = new ArrayList<Sport>();
-		user.setSports(sports);
-		userBuilder.sports(sports);
-		assertEquals(user.getSports(), userBuilder.build().getSports());
+		Sport sport = (new SportBuilder(1)).title("football").build();
+		user.addSport(sport);
+		userBuilder.sport(sport);
+		assertEquals(user.getSport(new Long(1)), userBuilder.build().getSport(new Long(1)));
 	}
 }

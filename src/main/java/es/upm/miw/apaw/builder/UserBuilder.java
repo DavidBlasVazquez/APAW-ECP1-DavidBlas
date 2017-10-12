@@ -1,26 +1,18 @@
 package es.upm.miw.apaw.builder;
 
 import java.util.Calendar;
-import java.util.List;
 
-import es.upm.miw.apaw.entities.User;
 import es.upm.miw.apaw.entities.Sport;
+import es.upm.miw.apaw.entities.User;
+
 
 public class UserBuilder {
 	private User user;
-	public UserBuilder() {
-		user = new User();
-	}
 	public UserBuilder(long id) {
-		user = new User();
-		user.setId(id);
+		user = new User(id);
 	}
 	public UserBuilder name (String name) {
 		user.setName(name);
-		return this;
-	}
-	public UserBuilder id (long id ) {
-		user.setId(id);
 		return this;
 	}
 	public UserBuilder birthDate (Calendar birthdate) {
@@ -31,8 +23,8 @@ public class UserBuilder {
 		user.setActive(active);
 		return this;
 	}
-	public UserBuilder sports(List<Sport> sports) {
-		user.setSports(sports);
+	public UserBuilder sport(Sport sport) {
+		user.addSport(sport);
 		return this;
 	}
 	public User build() {

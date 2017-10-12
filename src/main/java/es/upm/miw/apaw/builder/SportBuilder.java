@@ -5,16 +5,17 @@ import es.upm.miw.apaw.entities.Sport;
 public class SportBuilder {
 	private Sport sport;
 	public SportBuilder (long id ) {
-		sport = new Sport();
+		sport = new Sport(id);
 		sport.setId(id);	
-	}
-	public SportBuilder id (long id) {
-		sport.setId(id);
-		return this;
 	}
 	public SportBuilder title(String title) {
 		sport.setTitle(title);
-		return this;	}
+		return this;	
+    }
+	public SportBuilder category(String category) {
+		sport.setCategory(category);
+		return this;	
+    }
 	public Sport build () {
 		return sport;
 	}
