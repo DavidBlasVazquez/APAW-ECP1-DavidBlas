@@ -6,7 +6,7 @@ import java.util.Map;
 import es.upm.miw.apaw.entities.User;
 
 public class UserFactory {
-	public static UserFactory instance = new UserFactory();
+	public static final UserFactory instance = new UserFactory();
 	public static UserFactory getInstance () {
 		return instance;
 	}

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class Group extends Component {
+public class Group implements Component {
     private String name;
 	private List<Component> components;
 	public Group (String name) {
