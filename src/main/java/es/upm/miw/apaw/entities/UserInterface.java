@@ -11,6 +11,6 @@ public interface UserInterface {
 		public void setBirthDate(Calendar birthdate);
 		public boolean isActive();
 		public void setActive(boolean active);
-		public void setSport(Sport sport);
-		public Sport getSport();
+		public void setSport(Long id, Sport sport);
+		public Sport getSport(Long id);
 }

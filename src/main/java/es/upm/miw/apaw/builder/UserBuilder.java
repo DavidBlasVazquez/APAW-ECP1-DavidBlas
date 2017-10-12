@@ -2,8 +2,9 @@ package es.upm.miw.apaw.builder;
 
 import java.util.Calendar;
 
-import es.upm.miw.apaw.entities.User;
 import es.upm.miw.apaw.entities.Sport;
+import es.upm.miw.apaw.entities.User;
+
 
 public class UserBuilder {
 	private User user;

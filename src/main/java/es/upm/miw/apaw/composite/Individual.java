@@ -54,16 +54,6 @@ public class Individual extends Component implements UserInterface {
 	}
 
 	@Override
-	public void setSport(Sport sport) {
-		this.setSport(sport);
-	}
-
-	@Override
-	public Sport getSport() {
-		return user.getSport();
-	}
-
-	@Override
 	public void remove(Component component) {
 	}
 
@@ -79,5 +69,16 @@ public class Individual extends Component implements UserInterface {
 	@Override
 	public boolean isGroup() {
 		return false;
+	}
+
+	@Override
+	public void setSport(Long id, Sport sport) {
+		user.addSport(sport);	
+	}
+
+	@Override
+	public Sport getSport(Long id) {
+		return user.getSport(id);
+
 	}
 }

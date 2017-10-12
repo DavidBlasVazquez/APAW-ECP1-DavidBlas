@@ -49,6 +49,6 @@ public class UserBuilderTest {
 		Sport sport = (new SportBuilder(1)).title("football").build();
 		user.addSport(sport);
 		userBuilder.sport(sport);
-		assertEquals(user.getSport(), userBuilder.build().getSport());
+		assertEquals(user.getSport(new Long(1)), userBuilder.build().getSport(new Long(1)));
 	}
 }
